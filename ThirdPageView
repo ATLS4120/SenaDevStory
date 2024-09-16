@@ -9,15 +9,31 @@ import Foundation
 import SwiftUI
 
 struct ThirdView: View {
+
     var body: some View {
         VStack {
-            Text("This is the third page!")
+            Text("Skills")
                 .font(.largeTitle)
                 .padding()
+// found on https://forums.developer.apple.com/forums/thread/728135
+            Text("Moving piece")
+            Text("""
+                        • Figma
+                        • C, C++
+                        • Scala
+                        • Python
+                        • HTML, CSS, JavaScript
+                        • Onshape
+                        • 3d Printing
+                        • Laser Cutting
+                        • Wood-shopping
+                        • idk what else im just filling the space.
+                        """)
+            .padding(.leading, 20)
             
             // Add more UI elements here as needed
-            NavigationLink(destination: ContentView()) {
-                Text("Go to Main Page")
+            NavigationLink(destination: FourthView()) {
+                Text("Modular Furniture")
                     .font(.title2)
                     .padding()
                     .background(Color.blue)
@@ -25,7 +41,7 @@ struct ThirdView: View {
                     .cornerRadius(10)
             }
         }
-        .navigationTitle("Third Page") // Optional: Set the title for the navigation bar
+        .navigationTitle("Skills") // Optional: Set the title for the navigation bar
     }
 }
 

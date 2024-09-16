@@ -1,1 +1,31 @@
 
+import Foundation
+import SwiftUI
+
+struct FifthView: View {
+    var body: some View {
+        VStack {
+            Text("This is the second page!")
+                .font(.largeTitle)
+                .padding()
+            
+            // Add more UI elements here as needed
+            NavigationLink(destination: SixthView()) {
+                Text("Go to Third Page")
+                    .font(.title2)
+                    .padding()
+                    .background(Color.blue)
+                    .foregroundColor(.white)
+                    .cornerRadius(10)
+            }
+        }
+        .navigationTitle("Figma Prototype") // Optional: Set the title for the navigation bar
+    }
+}
+
+struct FifthView_Previews: PreviewProvider {
+    static var previews: some View {
+        FifthView()
+    }
+}
+//template generated with chatGPT

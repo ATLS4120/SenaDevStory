@@ -6,7 +6,7 @@ struct ContentView: View {
         NavigationView {
             VStack {
                 // Main content
-                Text("This is the first page!")
+                Text("Thanks for being here!")
                     .font(.largeTitle)
                     .padding()
                 Image("owl")
@@ -14,7 +14,7 @@ struct ContentView: View {
                     .foregroundStyle(.tint)
                 // Navigation link to the second view
                 NavigationLink(destination: SecondView()) {
-                    Text("Go to Second Page")
+                    Text("About me")
                         .frame(width: 200, height: 20, alignment: .center)
                         .font(.title2)
                         .padding()
@@ -24,7 +24,7 @@ struct ContentView: View {
                         .fixedSize(horizontal: false, vertical: true)
                 }
                 NavigationLink(destination: ThirdView()) {
-                    Text("Go to Third Page")
+                    Text("Skills")
                         .frame(width: 200, height: 20, alignment: .center)
                         .font(.title2)
                         .padding()
@@ -33,7 +33,7 @@ struct ContentView: View {
                         .cornerRadius(10)
                 }
                 NavigationLink(destination: FourthView()) {
-                    Text("Go to Fourth Page")
+                    Text("Modular Furniture")
                         .frame(width: 200, height: 20, alignment: .center)
                         .font(.title2)
                         .padding()
@@ -77,8 +77,8 @@ struct ContentView: View {
                         .foregroundColor(.white)
                         .cornerRadius(10)
                 }
-                NavigationLink(destination: NinethView()) {
-                    Text("Go to Nineth Page")
+                NavigationLink(destination: NinthView()) {
+                    Text("Go to Ninth Page")
                         .frame(width: 200, height: 20, alignment: .center)
                         .font(.title2)
                         .padding()

@@ -1,1 +1,31 @@
 
+import Foundation
+import SwiftUI
+
+struct SixthView: View {
+    var body: some View {
+        VStack {
+            Text("This is the sixth page!")
+                .font(.largeTitle)
+                .padding()
+            
+            // Add more UI elements here as needed
+            NavigationLink(destination: SeventhView()) {
+                Text("Go to Seventh Page")
+                    .font(.title2)
+                    .padding()
+                    .background(Color.blue)
+                    .foregroundColor(.white)
+                    .cornerRadius(10)
+            }
+        }
+        .navigationTitle("Sixth Page") // Optional: Set the title for the navigation bar
+    }
+}
+
+struct SixthView_Previews: PreviewProvider {
+    static var previews: some View {
+        SixthView()
+    }
+}
+//template generated with chatGPT
