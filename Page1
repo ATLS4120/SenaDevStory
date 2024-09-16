@@ -1,0 +1,56 @@
+import SwiftUI
+
+struct ContentView: View {
+  var body: some View {
+    ZStack() {
+      Rectangle()
+        .foregroundColor(.clear)
+        .frame(width: 430, height: 932)
+        .background(Color(red: 0.38, green: 0.53, blue: 0.56))
+        .offset(x: 0, y: 0)
+      Rectangle()
+        .foregroundColor(.clear)
+        .frame(width: 297, height: 361)
+        .background(
+          AsyncImage(url: URL(string: "https://via.placeholder.com/297x361"))
+        )
+        .offset(x: -0.50, y: -235.50)
+        .shadow(
+          color: Color(red: 0, green: 0, blue: 0, opacity: 0.25), radius: 4, y: 4
+        )
+      Text("Hi! My name is Sena!")
+        .font(Font.custom("Inter", size: 32).weight(.medium))
+        .foregroundColor(.black)
+        .offset(x: -1, y: 44.50)
+      Text("I am a Software Developer interested in Cybersecurity and Design.\nExcited to meet you! This is my first time working in Swift.")
+        .font(Font.custom("Inter", size: 32).weight(.light))
+        .foregroundColor(.black)
+        .offset(x: -0.50, y: 264)
+      ZStack() {
+        Rectangle()
+          .foregroundColor(.clear)
+          .frame(width: 128, height: 41)
+          .background(Color(red: 0.22, green: 0.29, blue: 0.53))
+          .cornerRadius(5)
+          .offset(x: 0, y: 0)
+          .shadow(
+            color: Color(red: 0, green: 0, blue: 0, opacity: 0.25), radius: 4, y: 4
+          )
+        Text("Next")
+          .font(Font.custom("Inter", size: 32).weight(.light))
+          .foregroundColor(.white)
+          .offset(x: -0.50, y: 1)
+      }
+      .frame(width: 128, height: 41)
+      .offset(x: 127, y: 426.50)
+    }
+    .frame(width: 430, height: 932)
+    .background(.white);
+  }
+}
+
+struct ContentView_Previews: PreviewProvider {
+  static var previews: some View {
+    ContentView()
+  }
+}
