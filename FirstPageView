@@ -15,12 +15,87 @@ struct ContentView: View {
                 // Navigation link to the second view
                 NavigationLink(destination: SecondView()) {
                     Text("Go to Second Page")
+                        .frame(width: 200, height: 20, alignment: .center)
+                        .font(.title2)
+                        .padding()
+                        .background(Color.blue)
+                        .foregroundColor(.white)
+                        .cornerRadius(10)
+                        .fixedSize(horizontal: false, vertical: true)
+                }
+                NavigationLink(destination: ThirdView()) {
+                    Text("Go to Third Page")
+                        .frame(width: 200, height: 20, alignment: .center)
                         .font(.title2)
                         .padding()
                         .background(Color.blue)
                         .foregroundColor(.white)
                         .cornerRadius(10)
                 }
+                NavigationLink(destination: FourthView()) {
+                    Text("Go to Fourth Page")
+                        .frame(width: 200, height: 20, alignment: .center)
+                        .font(.title2)
+                        .padding()
+                        .background(Color.blue)
+                        .foregroundColor(.white)
+                        .cornerRadius(10)
+                }
+                NavigationLink(destination: FifthView()) {
+                    Text("Go to Fifth Page")
+                        .frame(width: 200, height: 20, alignment: .center)
+                        .font(.title2)
+                        .padding()
+                        .background(Color.blue)
+                        .foregroundColor(.white)
+                        .cornerRadius(10)
+                }
+                NavigationLink(destination: SixthView()) {
+                    Text("Go to Sixth Page")
+                        .frame(width: 200, height: 20, alignment: .center)
+                        .font(.title2)
+                        .padding()
+                        .background(Color.blue)
+                        .foregroundColor(.white)
+                        .cornerRadius(10)
+                }
+                NavigationLink(destination: SeventhView()) {
+                    Text("Go to Seventh Page")
+                        .frame(width: 200, height: 20, alignment: .center)
+                        .font(.title2)
+                        .padding()
+                        .background(Color.blue)
+                        .foregroundColor(.white)
+                        .cornerRadius(10)
+                }
+                NavigationLink(destination: EighthView()) {
+                    Text("Go to Eighth Page")
+                        .frame(width: 200, height: 20, alignment: .center)
+                        .font(.title2)
+                        .padding()
+                        .background(Color.blue)
+                        .foregroundColor(.white)
+                        .cornerRadius(10)
+                }
+                NavigationLink(destination: NinethView()) {
+                    Text("Go to Nineth Page")
+                        .frame(width: 200, height: 20, alignment: .center)
+                        .font(.title2)
+                        .padding()
+                        .background(Color.blue)
+                        .foregroundColor(.white)
+                        .cornerRadius(10)
+                }
+                NavigationLink(destination: TenthView()) {
+                    Text("Go to Tenth Page")
+                        .frame(width: 200, height: 20, alignment: .center)
+                        .font(.title2)
+                        .padding()
+                        .background(Color.blue)
+                        .foregroundColor(.white)
+                        .cornerRadius(10)
+                }
+                
             }
             .navigationTitle("Main Page") // Optional: Set the title for the navigation bar
         }
