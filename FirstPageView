@@ -42,7 +42,7 @@ struct ContentView: View {
                         .cornerRadius(10)
                 }
                 NavigationLink(destination: FifthView()) {
-                    Text("Go to Fifth Page")
+                    Text("Figma Prototype")
                         .frame(width: 200, height: 20, alignment: .center)
                         .font(.title2)
                         .padding()
@@ -51,7 +51,7 @@ struct ContentView: View {
                         .cornerRadius(10)
                 }
                 NavigationLink(destination: SixthView()) {
-                    Text("Go to Sixth Page")
+                    Text("JavaScript Project")
                         .frame(width: 200, height: 20, alignment: .center)
                         .font(.title2)
                         .padding()
