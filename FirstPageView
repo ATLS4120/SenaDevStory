@@ -1,0 +1,33 @@
+//generated in chat
+import SwiftUI
+
+struct ContentView: View {
+    var body: some View {
+        NavigationView {
+            VStack {
+                // Main content
+                Text("This is the first page!")
+                    .font(.largeTitle)
+                    .padding()
+                
+                // Navigation link to the second view
+                NavigationLink(destination: SecondView()) {
+                    Text("Go to Second Page")
+                        .font(.title2)
+                        .padding()
+                        .background(Color.blue)
+                        .foregroundColor(.white)
+                        .cornerRadius(10)
+                }
+            }
+            .navigationTitle("First Page") // Optional: Set the title for the navigation bar
+        }
+    }
+}
+
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
+}
+
