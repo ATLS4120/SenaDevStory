@@ -1,0 +1,29 @@
+//
+//  SecondView.swift
+//  AppDevStory
+//
+//  Created by Sena Uctuk on 9/15/24.
+//
+
+import Foundation
+import SwiftUI
+
+struct SecondView: View {
+    var body: some View {
+        VStack {
+            Text("This is the second page!")
+                .font(.largeTitle)
+                .padding()
+            
+            // Add more UI elements here as needed
+        }
+        .navigationTitle("Second Page") // Optional: Set the title for the navigation bar
+    }
+}
+
+struct SecondView_Previews: PreviewProvider {
+    static var previews: some View {
+        SecondView()
+    }
+}
+//generated with chatGPT
