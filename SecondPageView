@@ -16,6 +16,14 @@ struct SecondView: View {
                 .padding()
             
             // Add more UI elements here as needed
+            NavigationLink(destination: ThirdView()) {
+                Text("Go to Third Page")
+                    .font(.title2)
+                    .padding()
+                    .background(Color.blue)
+                    .foregroundColor(.white)
+                    .cornerRadius(10)
+            }
         }
         .navigationTitle("Second Page") // Optional: Set the title for the navigation bar
     }
