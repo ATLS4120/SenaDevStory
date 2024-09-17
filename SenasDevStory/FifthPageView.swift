@@ -2,32 +2,31 @@
 import Foundation
 import SwiftUI
 
-enum Constants {
-    static let figmaText = "This was a product-prototype for a non-profit focused on teaching young people how to have healthy interactions with Tech. "
-}
 
-func resizeImage(image: UIImage, targetSize: CGSize) -> UIImage {
-    let size = image.size
+let figmaText = "This was a product-prototype for a non-profit focused on teaching young people how to have healthy interactions with Tech. "
 
-    let widthRatio  = targetSize.width  / size.width
-    let heightRatio = targetSize.height / size.height
-
-    // Determine the scaling factor to preserve aspect ratio
-    let scaleFactor = min(widthRatio, heightRatio)
-
-    // Compute the new image size while maintaining the aspect ratio
-    let scaledImageSize = CGSize(width: size.width * scaleFactor, height: size.height * scaleFactor)
-
-    // Create a graphics context to draw the scaled image
-    let renderer = UIGraphicsImageRenderer(size: scaledImageSize)
-    let scaledImage = renderer.image { _ in
-        image.draw(in: CGRect(origin: .zero, size: scaledImageSize))
-    }
-
-    return scaledImage
-}
+//func resizeImage(image: UIImage, targetSize: CGSize) -> UIImage {
+//    let size = image.size
+//
+//    let widthRatio  = targetSize.width  / size.width
+//    let heightRatio = targetSize.height / size.height
+//
+//    // Determine the scaling factor to preserve aspect ratio
+//    let scaleFactor = min(widthRatio, heightRatio)
+//
+//    // Compute the new image size while maintaining the aspect ratio
+//    let scaledImageSize = CGSize(width: size.width * scaleFactor, height: size.height * scaleFactor)
+//
+//    // Create a graphics context to draw the scaled image
+//    let renderer = UIGraphicsImageRenderer(size: scaledImageSize)
+//    let scaledImage = renderer.image { _ in
+//        image.draw(in: CGRect(origin: .zero, size: scaledImageSize))
+//    }
+//
+//    return scaledImage
+//}
 //end of generated
-let figmaSmall = resizeImage(image: figma, targetSize: CGSize(width: 200, height: 200))
+//let figmaSmall = resizeImage(image: figma, targetSize: CGSize(width: 200, height: 200))
 
 
 struct FifthView: View {
@@ -37,7 +36,7 @@ struct FifthView: View {
                 .font(.largeTitle)
                 .padding()
 
-            Image(figmaSmall)
+            Image("figma")
                 .imageScale(.small)
                 .foregroundStyle(.tint)
             Text(figmaText)
