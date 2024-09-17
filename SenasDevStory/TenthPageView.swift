@@ -11,7 +11,7 @@ struct TenthView: View {
             
             // Add more UI elements here as needed
             Text ("That is all I have!")
-                .font(.small)
+                .font(.title3)
                 .padding()
         }
         .navigationTitle("Tenth Page") // Optional: Set the title for the navigation bar

@@ -2,16 +2,16 @@
 import Foundation
 import SwiftUI
 
-struct SeventhView: View {
+struct EighthView: View {
     var body: some View {
         VStack {
-            Text("This is the second page!")
+            Text("This is the Eighth page!")
                 .font(.largeTitle)
                 .padding()
             
             // Add more UI elements here as needed
-            NavigationLink(destination: EightView()) {
-                Text("Go to Eighth Page")
+            NavigationLink(destination: NinthView()) {
+                Text("Go to Ninth Page")
                     .font(.title2)
                     .padding()
                     .background(Color.blue)
@@ -19,13 +19,13 @@ struct SeventhView: View {
                     .cornerRadius(10)
             }
         }
-        .navigationTitle("Seventh Page") // Optional: Set the title for the navigation bar
+        .navigationTitle("Second Page") // Optional: Set the title for the navigation bar
     }
 }
 
-struct SeventhView_Previews: PreviewProvider {
+struct EighthView_Previews: PreviewProvider {
     static var previews: some View {
-        SeventhView()
+        EighthView()
     }
 }
 //template generated with chatGPT

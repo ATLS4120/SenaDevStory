@@ -2,9 +2,10 @@
 import Foundation
 import SwiftUI
 
+
 enum Constants {
-    static let Furniture = "I used a technique called kerf cutting to round the edges of the wood. It was meant to be a stack-able piece of furniture."
-    static let AboutMeText = "I am a Software Developer interested in Cybersecurity and Design. Excited to meet you! This is my first time working in Swift."
+    static let JavaScriptText = "This is a JavaScript project with the goal of making the most annoying phone number input. The user has to click the clock and the phone number is filled by the hour value."
+
 }
 
 func resizeImage(image: UIImage, targetSize: CGSize) -> UIImage {
@@ -28,24 +29,26 @@ func resizeImage(image: UIImage, targetSize: CGSize) -> UIImage {
     return scaledImage
 }
 //end of generated
-let ModularSmall = resizeImage(image: Sena, targetSize: CGSize(width: 200, height: 200))
+let JavaScriptSmall = resizeImage(image: JavaScript, targetSize: CGSize(width: 200, height: 200))
 
-struct FourthView: View {
+
+struct SixthView: View {
     var body: some View {
         VStack {
-            Text("I built this!")
+            Text("JavaScript Project")
                 .font(.largeTitle)
                 .padding()
 
-            Image(ModularSmall)
+            Image(JavaScriptSmall)
                 .imageScale(.small)
                 .foregroundStyle(.tint)
-
-            Text(Furniture)
+                
+            Text(JavaScriptText)
                 .padding()
+            
             // Add more UI elements here as needed
-            NavigationLink(destination: FifthView()) {
-                Text("Figma Prototype")
+            NavigationLink(destination: SeventhView()) {
+                Text("Go to Seventh Page")
                     .font(.title2)
                     .padding()
                     .background(Color.blue)
@@ -53,13 +56,13 @@ struct FourthView: View {
                     .cornerRadius(10)
             }
         }
-        .navigationTitle("Modular Furniture") // Optional: Set the title for the navigation bar
+        .navigationTitle("Sixth Page") // Optional: Set the title for the navigation bar
     }
 }
 
-struct FourthView_Previews: PreviewProvider {
+struct SixthView_Previews: PreviewProvider {
     static var previews: some View {
-        FourthView()
+        SixthView()
     }
 }
 //template generated with chatGPT
