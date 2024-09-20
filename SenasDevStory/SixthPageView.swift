@@ -47,7 +47,7 @@ struct SixthView: View {
             
             // Add more UI elements here as needed
             NavigationLink(destination: SeventhView()) {
-                Text("Go to Seventh Page")
+                Text("Personal Website")
                     .font(.title2)
                     .padding()
                     .background(Color.blue)

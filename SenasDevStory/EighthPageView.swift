@@ -5,8 +5,14 @@ import SwiftUI
 struct EighthView: View {
     var body: some View {
         VStack {
-            Text("This is the Eighth page!")
+            Text("Graduate Paper - Ethical Hacking")
                 .font(.largeTitle)
+                .padding()
+
+            Link("Check it out!", destination: URL(string: "https://www.overleaf.com/read/zkmxdydwrkvv#1147eb")!)
+
+            Text("This was a paper I wrote on RFID and card access security on University Campuses. I used Latex to format everything")
+                .font(.title2)
                 .padding()
             
             // Add more UI elements here as needed

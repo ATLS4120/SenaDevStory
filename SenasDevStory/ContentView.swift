@@ -60,7 +60,7 @@ struct ContentView: View {
                         .cornerRadius(10)
                 }
                 NavigationLink(destination: SeventhView()) {
-                    Text("Go to Seventh Page")
+                    Text("Personal Website")
                         .frame(width: 200, height: 20, alignment: .center)
                         .font(.title2)
                         .padding()
@@ -69,7 +69,7 @@ struct ContentView: View {
                         .cornerRadius(10)
                 }
                 NavigationLink(destination: EighthView()) {
-                    Text("Go to Eighth Page")
+                    Text("Graduate Paper - Ethical Hacking")
                         .frame(width: 200, height: 20, alignment: .center)
                         .font(.title2)
                         .padding()

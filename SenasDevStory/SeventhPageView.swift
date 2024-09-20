@@ -5,13 +5,19 @@ import SwiftUI
 struct SeventhView: View {
     var body: some View {
         VStack {
-            Text("This is the second page!")
+            Text("Senas.me")
                 .font(.largeTitle)
                 .padding()
+
+            Link("Check it out!", destination: URL(string: "https://www.senas.me")!)
             
+
+            Text("This was a personal website I built from scratch, I used bootstrapping to make some of the functionalities.")
+                .font(.title2)
+                .padding()
             // Add more UI elements here as needed
             NavigationLink(destination: EighthView()) {
-                Text("Go to Eighth Page")
+                Text("Graduate Paper - Ethical Hacking")
                     .font(.title2)
                     .padding()
                     .background(Color.blue)
