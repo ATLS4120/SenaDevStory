@@ -9,10 +9,10 @@ struct ContentView: View {
                 Text("Thanks for being here!")
                     .font(.largeTitle)
                     .padding()
-                Image("owl")
-                    .imageScale(.small)
-                    .foregroundStyle(.tint)
-                // Navigation link to the second view
+//                Image("owl")
+//                    .imageScale(.small)
+//                    .foregroundStyle(.tint)
+//                // Navigation link to the second view
                 NavigationLink(destination: SecondView()) {
                     Text("About me")
                         .frame(width: 200, height: 20, alignment: .center)
@@ -102,8 +102,7 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
+#Preview {
+    ContentView()
 }
+

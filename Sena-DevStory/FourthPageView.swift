@@ -2,10 +2,7 @@
 import Foundation
 import SwiftUI
 
-
-
-let JavaScriptText = "This is a JavaScript project with the goal of making the most annoying phone number input. The user has to click the clock and the phone number is filled by the hour value."
-
+let Furniture = "I used a technique called kerf cutting to round the edges of the wood. It was meant to be a stack-able piece of furniture."
 
 //func resizeImage(image: UIImage, targetSize: CGSize) -> UIImage {
 //    let size = image.size
@@ -27,27 +24,26 @@ let JavaScriptText = "This is a JavaScript project with the goal of making the m
 //
 //    return scaledImage
 //}
-//end of generated
-//let JavaScriptSmall = resizeImage(image: JavaScript, targetSize: CGSize(width: 200, height: 200))
+////end of generated
+//let ModularSmall = resizeImage(image: Sena, targetSize: CGSize(width: 200, height: 200))
 
-
-struct SixthView: View {
+struct FourthView: View {
     var body: some View {
         VStack {
-            Text("JavaScript Project")
+            Text("I built this!")
                 .font(.largeTitle)
                 .padding()
 
-            Image("JavaScript")
+            Image("modular")
+                .resizable()
                 .imageScale(.small)
                 .foregroundStyle(.tint)
-                
-            Text(JavaScriptText)
+
+            Text(Furniture)
                 .padding()
-            
             // Add more UI elements here as needed
-            NavigationLink(destination: SeventhView()) {
-                Text("Personal Website")
+            NavigationLink(destination: FifthView()) {
+                Text("Figma Prototype")
                     .font(.title2)
                     .padding()
                     .background(Color.blue)
@@ -55,13 +51,13 @@ struct SixthView: View {
                     .cornerRadius(10)
             }
         }
-        .navigationTitle("Sixth Page") // Optional: Set the title for the navigation bar
+        .navigationTitle("Modular Furniture") // Optional: Set the title for the navigation bar
     }
 }
 
-struct SixthView_Previews: PreviewProvider {
+struct FourthView_Previews: PreviewProvider {
     static var previews: some View {
-        SixthView()
+        FourthView()
     }
 }
 //template generated with chatGPT
