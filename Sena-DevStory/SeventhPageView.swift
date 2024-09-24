@@ -16,14 +16,14 @@ struct SeventhView: View {
                 .font(.title2)
                 .padding()
             // Add more UI elements here as needed
-//            NavigationLink(destination: EighthView()) {
-//                Text("Graduate Paper - Ethical Hacking")
-//                    .font(.title2)
-//                    .padding()
-//                    .background(Color.blue)
-//                    .foregroundColor(.white)
-//                    .cornerRadius(10)
-//            }
+            NavigationLink(destination: EighthView()) {
+                Text("Graduate Paper - Ethical Hacking")
+                    .font(.title2)
+                    .padding()
+                    .background(Color.blue)
+                    .foregroundColor(.white)
+                    .cornerRadius(10)
+            }
         }
         .navigationTitle("Seventh Page") // Optional: Set the title for the navigation bar
     }

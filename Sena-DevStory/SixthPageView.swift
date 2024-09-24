@@ -47,14 +47,14 @@ struct SixthView: View {
                 .padding()
             
             // Add more UI elements here as needed
-//            NavigationLink(destination: SeventhView()) {
-//                Text("Personal Website")
-//                    .font(.title2)
-//                    .padding()
-//                    .background(Color.blue)
-//                    .foregroundColor(.white)
-//                    .cornerRadius(10)
-//            }
+            NavigationLink(destination: SeventhView()) {
+                Text("Personal Website")
+                    .font(.title2)
+                    .padding()
+                    .background(Color.blue)
+                    .foregroundColor(.white)
+                    .cornerRadius(10)
+            }
         }
         .navigationTitle("Sixth Page") // Optional: Set the title for the navigation bar
     }
