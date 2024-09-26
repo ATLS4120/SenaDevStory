@@ -2,22 +2,22 @@
 import Foundation
 import SwiftUI
 
-struct SeventhView: View {
+struct EighthView: View {
     var body: some View {
         VStack {
-            Text("Senas.me")
+            Text("Graduate Paper - Ethical Hacking")
                 .font(.largeTitle)
                 .padding()
 
-            Link("Check it out!", destination: URL(string: "https://www.senas.me")!)
-            
+            Link("Check it out!", destination: URL(string: "https://www.overleaf.com/read/zkmxdydwrkvv#1147eb")!)
 
-            Text("This was a personal website I built from scratch, I used bootstrapping to make some of the functionalities.")
+            Text(AllText.GradPaper)
                 .font(.title2)
                 .padding()
+            
             // Add more UI elements here as needed
-            NavigationLink(destination: EighthView()) {
-                Text("Graduate Paper - Ethical Hacking")
+            NavigationLink(destination: NinthView()) {
+                Text("Go to Ninth Page")
                     .font(.title2)
                     .padding()
                     .background(Color.blue)
@@ -25,13 +25,13 @@ struct SeventhView: View {
                     .cornerRadius(10)
             }
         }
-        .navigationTitle("Seventh Page") // Optional: Set the title for the navigation bar
+        .navigationTitle("Second Page") // Optional: Set the title for the navigation bar
     }
 }
 
-struct SeventhView_Previews: PreviewProvider {
+struct EighthView_Previews: PreviewProvider {
     static var previews: some View {
-        SeventhView()
+        EighthView()
     }
 }
 //template generated with chatGPT

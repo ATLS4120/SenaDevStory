@@ -4,9 +4,6 @@ import SwiftUI
 
 
 
-let JavaScriptText = "This is a JavaScript project with the goal of making the most annoying phone number input. The user has to click the clock and the phone number is filled by the hour value."
-
-
 //func resizeImage(image: UIImage, targetSize: CGSize) -> UIImage {
 //    let size = image.size
 //
@@ -42,8 +39,9 @@ struct SixthView: View {
                 .resizable()
                 .imageScale(.small)
                 .foregroundStyle(.tint)
+                .aspectRatio(contentMode: .fit)
                 
-            Text(JavaScriptText)
+            Text(AllTextJavaScriptText)
                 .padding()
             
             // Add more UI elements here as needed

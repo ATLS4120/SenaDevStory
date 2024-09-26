@@ -8,8 +8,6 @@
 import Foundation
 import SwiftUI
 
-    let Name = "My name is Sena (rhymes with henna)"
-    let AboutMeText = "I am a Software Developer interested in Cybersecurity and Design. Excited to meet you! This is my first time working in Swift."
 //generated with GPT
 import UIKit
 
@@ -40,18 +38,14 @@ import UIKit
 struct SecondView: View {
     var body: some View {
         VStack {
-            Image("Sena")
-                .resizable()
-                .imageScale(.small)
-                .foregroundStyle(.tint)
 
             Text("About Me!")
                 .font(.largeTitle)
                 .padding()
-            Text(Name)
+            Text(AllText.Name)
                 .font(.title)
                 .padding()
-            Text(AboutMeText)
+            Text(AllText.AboutMeText)
                 .font(.title2)
                 .padding()
             // Add more UI elements here as needed

@@ -17,18 +17,7 @@ struct ThirdView: View {
                 .padding()
 // found on https://forums.developer.apple.com/forums/thread/728135
             Text("Moving piece")
-            Text("""
-                        • Figma
-                        • C, C++
-                        • Scala
-                        • Python
-                        • HTML, CSS, JavaScript
-                        • Onshape
-                        • 3d Printing
-                        • Laser Cutting
-                        • Wood-shopping
-                        • idk what else im just filling the space.
-                        """)
+            Text(AllText.Skills)
             .padding(.leading, 20)
             
             // Add more UI elements here as needed

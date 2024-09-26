@@ -26,6 +26,8 @@ struct NinthView: View {
             Text("you")
                 .kerning(10.0)
             Text("feel?")
+                .frame(width: 200, height: 100)
+                .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/)
             
             // Add more UI elements here as needed
             NavigationLink(destination: TenthView()) {

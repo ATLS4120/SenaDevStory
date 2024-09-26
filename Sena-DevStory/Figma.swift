@@ -2,7 +2,8 @@
 import Foundation
 import SwiftUI
 
-let Furniture = "I used a technique called kerf cutting to round the edges of the wood. It was meant to be a stack-able piece of furniture."
+
+
 
 //func resizeImage(image: UIImage, targetSize: CGSize) -> UIImage {
 //    let size = image.size
@@ -24,26 +25,27 @@ let Furniture = "I used a technique called kerf cutting to round the edges of th
 //
 //    return scaledImage
 //}
-////end of generated
-//let ModularSmall = resizeImage(image: Sena, targetSize: CGSize(width: 200, height: 200))
+//end of generated
+//let figmaSmall = resizeImage(image: figma, targetSize: CGSize(width: 200, height: 200))
 
-struct FourthView: View {
+
+struct FifthView: View {
     var body: some View {
         VStack {
-            Text("I built this!")
+            Text("Figma Prototype for PRISM")
                 .font(.largeTitle)
                 .padding()
 
-            Image("modular")
+            Image("figma")
                 .resizable()
                 .imageScale(.small)
                 .foregroundStyle(.tint)
-
-            Text(Furniture)
+                .aspectRatio(contentMode: .fit)
+            Text(AllText.figmaText)
                 .padding()
             // Add more UI elements here as needed
-            NavigationLink(destination: FifthView()) {
-                Text("Figma Prototype")
+            NavigationLink(destination: SixthView()) {
+                Text("JavaScript Project")
                     .font(.title2)
                     .padding()
                     .background(Color.blue)
@@ -51,13 +53,13 @@ struct FourthView: View {
                     .cornerRadius(10)
             }
         }
-        .navigationTitle("Modular Furniture") // Optional: Set the title for the navigation bar
+        .navigationTitle("Figma Prototype") // Optional: Set the title for the navigation bar
     }
 }
 
-struct FourthView_Previews: PreviewProvider {
+struct FifthView_Previews: PreviewProvider {
     static var previews: some View {
-        FourthView()
+        FifthView()
     }
 }
 //template generated with chatGPT
