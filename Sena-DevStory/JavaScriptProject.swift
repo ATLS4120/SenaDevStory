@@ -41,7 +41,7 @@ struct SixthView: View {
                 .foregroundStyle(.tint)
                 .aspectRatio(contentMode: .fit)
                 
-            Text(AllTextJavaScriptText)
+            Text(AllText.JavaScriptText)
                 .padding()
             
             // Add more UI elements here as needed
