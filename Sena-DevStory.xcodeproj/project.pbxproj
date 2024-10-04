@@ -19,6 +19,9 @@
 		7850F8D22C9E2A5300FD966F /* SandBox1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7850F8D12C9E2A5300FD966F /* SandBox1.swift */; };
 		7850F8D42C9E2A5900FD966F /* SandBox2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7850F8D32C9E2A5900FD966F /* SandBox2.swift */; };
 		7850F8D82C9E2B3000FD966F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7850F8D72C9E2B3000FD966F /* ContentView.swift */; };
+		78CBA8272CB0A64C00BEC078 /* MainStoryArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CBA8262CB0A64C00BEC078 /* MainStoryArray.swift */; };
+		78CBA8292CB0A67800BEC078 /* mainStoryAndChoiceStructs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CBA8282CB0A67800BEC078 /* mainStoryAndChoiceStructs.swift */; };
+		78CBA82B2CB0A6CD00BEC078 /* MainStoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CBA82A2CB0A6CD00BEC078 /* MainStoryView.swift */; };
 		78FC84AB2CA528D500B6992E /* AllText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FC84AA2CA528D500B6992E /* AllText.swift */; };
 		78FC84AD2CA52B0900B6992E /* NavLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FC84AC2CA52B0900B6992E /* NavLabel.swift */; };
 		78FC84AF2CA52DCB00B6992E /* SenasWebsite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FC84AE2CA52DCB00B6992E /* SenasWebsite.swift */; };
@@ -38,6 +41,9 @@
 		7850F8D12C9E2A5300FD966F /* SandBox1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SandBox1.swift; sourceTree = "<group>"; };
 		7850F8D32C9E2A5900FD966F /* SandBox2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SandBox2.swift; sourceTree = "<group>"; };
 		7850F8D72C9E2B3000FD966F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		78CBA8262CB0A64C00BEC078 /* MainStoryArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainStoryArray.swift; sourceTree = "<group>"; };
+		78CBA8282CB0A67800BEC078 /* mainStoryAndChoiceStructs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainStoryAndChoiceStructs.swift; sourceTree = "<group>"; };
+		78CBA82A2CB0A6CD00BEC078 /* MainStoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainStoryView.swift; sourceTree = "<group>"; };
 		78FC84AA2CA528D500B6992E /* AllText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllText.swift; sourceTree = "<group>"; };
 		78FC84AC2CA52B0900B6992E /* NavLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavLabel.swift; sourceTree = "<group>"; };
 		78FC84AE2CA52DCB00B6992E /* SenasWebsite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SenasWebsite.swift; sourceTree = "<group>"; };
@@ -73,6 +79,9 @@
 		7850F8B22C9E223E00FD966F /* Sena-DevStory */ = {
 			isa = PBXGroup;
 			children = (
+				78CBA82A2CB0A6CD00BEC078 /* MainStoryView.swift */,
+				78CBA8282CB0A67800BEC078 /* mainStoryAndChoiceStructs.swift */,
+				78CBA8262CB0A64C00BEC078 /* MainStoryArray.swift */,
 				7850F8B32C9E223E00FD966F /* Sena_DevStoryApp.swift */,
 				7850F8D72C9E2B3000FD966F /* ContentView.swift */,
 				78FC84AC2CA52B0900B6992E /* NavLabel.swift */,
@@ -176,13 +185,16 @@
 				78FC84AB2CA528D500B6992E /* AllText.swift in Sources */,
 				7850F8C82C9E24CF00FD966F /* ModularFurniture.swift in Sources */,
 				7850F8C62C9E248500FD966F /* Skills.swift in Sources */,
+				78CBA8292CB0A67800BEC078 /* mainStoryAndChoiceStructs.swift in Sources */,
 				7850F8C42C9E240100FD966F /* AboutMe.swift in Sources */,
 				7850F8D42C9E2A5900FD966F /* SandBox2.swift in Sources */,
+				78CBA8272CB0A64C00BEC078 /* MainStoryArray.swift in Sources */,
 				7850F8CA2C9E294400FD966F /* Figma.swift in Sources */,
 				78FC84AF2CA52DCB00B6992E /* SenasWebsite.swift in Sources */,
 				7850F8D22C9E2A5300FD966F /* SandBox1.swift in Sources */,
 				7850F8D02C9E2A1E00FD966F /* GradPaper.swift in Sources */,
 				7850F8CC2C9E29A700FD966F /* JavaScriptProject.swift in Sources */,
+				78CBA82B2CB0A6CD00BEC078 /* MainStoryView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
