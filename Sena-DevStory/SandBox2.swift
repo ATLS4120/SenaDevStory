@@ -2,7 +2,7 @@
 import Foundation
 import SwiftUI
 
-struct TenthView: View {
+struct SandBox2: View {
     var body: some View {
         VStack {
             Text("This is the Last page!")
@@ -20,7 +20,7 @@ struct TenthView: View {
 
 struct TenthView_Previews: PreviewProvider {
     static var previews: some View {
-        TenthView()
+        SandBox2()
     }
 }
 //template generated with chatGPT

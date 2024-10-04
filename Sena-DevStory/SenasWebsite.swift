@@ -2,7 +2,7 @@
 import Foundation
 import SwiftUI
 
-struct SeventhView: View {
+struct SenasWebsite: View {
     var body: some View {
         VStack {
             Text("Senas.me")
@@ -15,15 +15,6 @@ struct SeventhView: View {
             Text(AllText.SenasWebsite)
                 .font(.title2)
                 .padding()
-            // Add more UI elements here as needed
-            NavigationLink(destination: EighthView()) {
-                Text("Graduate Paper - Ethical Hacking")
-                    .font(.title2)
-                    .padding()
-                    .background(Color.blue)
-                    .foregroundColor(.white)
-                    .cornerRadius(10)
-            }
         }
         .navigationTitle("Seventh Page") // Optional: Set the title for the navigation bar
     }
@@ -31,7 +22,7 @@ struct SeventhView: View {
 
 struct SeventhView_Previews: PreviewProvider {
     static var previews: some View {
-        SeventhView()
+        SenasWebsite()
     }
 }
 //template generated with chatGPT

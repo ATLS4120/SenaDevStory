@@ -2,7 +2,7 @@
 import Foundation
 import SwiftUI
 
-struct NinthView: View {
+struct SandBox1: View {
     var body: some View {
         ScrollView() {
             VStack {
@@ -60,16 +60,6 @@ struct NinthView: View {
                     .foregroundColor(.green)
                 
                 
-                // Add more UI elements here as needed
-                NavigationLink(destination: TenthView()) {
-                    Text("Go to Tenth Page")
-                        .font(.title2)
-                        .padding()
-                        .background(Color.blue)
-                        .foregroundColor(.white)
-                        .cornerRadius(10)
-                }
-                
             }
         }
         .navigationTitle("Ninth Page") // Optional: Set the title for the navigation bar
@@ -78,7 +68,7 @@ struct NinthView: View {
 
 struct NinthView_Previews: PreviewProvider {
     static var previews: some View {
-        NinthView()
+        SandBox1()
     }
 }
 //template generated with chatGPT

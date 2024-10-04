@@ -22,39 +22,39 @@ let story = [
               ], isEnding: false),
     StoryPage(
         text: "This is my bio",  // No text for this page
-            view: AnyView(SecondView()),
+            view: AnyView(AboutMe()),
             choices: [
-                Choice(text: "Go to Personal Website", nextPageIndex: 3)
+                Choice(text: "Go to Sena's Skills", nextPageIndex: 3)
             ],
             isEnding: false
         ),//index: 2
     StoryPage(
             text: nil,  // No text for this page
-            view: AnyView(ThirdView()),
+            view: AnyView(Skills()),
             choices: [
-                Choice(text: "Go to Personal Website", nextPageIndex: 4)
+                Choice(text: "Go to Modular Furniture", nextPageIndex: 4)
             ],
             isEnding: false
         ),//index: 3
     StoryPage(
             text: nil,  // No text for this page
-            view: AnyView(FourthView()),
+            view: AnyView(ModularFurniture()),
             choices: [
-                Choice(text: "Go to Personal Website", nextPageIndex: 5)
+                Choice(text: "Go to Figma", nextPageIndex: 5)
             ],
             isEnding: false
         ), //index: 4
     StoryPage(
             text: nil,  // No text for this page
-            view: AnyView(FifthView()),
+            view: AnyView(Figma()),
             choices: [
-                Choice(text: "Go to Personal Website", nextPageIndex: 6)
+                Choice(text: "Go to JavaScript Project", nextPageIndex: 6)
             ],
             isEnding: false
         ), //index: 5
     StoryPage(
             text: nil,  // No text for this page
-            view: AnyView(SixthView()),
+            view: AnyView(JSProject()),
             choices: [
                 Choice(text: "Go to Personal Website", nextPageIndex: 7)
             ],
@@ -62,31 +62,31 @@ let story = [
         ), //index: 6
     StoryPage(
             text: nil,  // No text for this page
-            view: AnyView(SeventhView()),
+            view: AnyView(SenasWebsite()),
             choices: [
-                Choice(text: "Go to Personal Website", nextPageIndex: 8)
+                Choice(text: "Go to Grad Paper", nextPageIndex: 8)
             ],
             isEnding: false
         ), //index: 7
     StoryPage(
             text: nil,  // No text for this page
-            view: AnyView(EighthView()),
+            view: AnyView(GradPaper()),
             choices: [
-                Choice(text: "Go to Personal Website", nextPageIndex: 9)
+                Choice(text: "Go to Sand Box 1", nextPageIndex: 9)
             ],
             isEnding: false
         ), //index: 8
     StoryPage(
             text: nil,  // No text for this page
-            view: AnyView(NinthView()),
+            view: AnyView(SandBox1()),
             choices: [
-                Choice(text: "Go to Personal Website", nextPageIndex: 10)
+                Choice(text: "Go to Sand Box 2", nextPageIndex: 10)
             ],
             isEnding: false
         ),//index: 9
     StoryPage(
             text: nil,  // No text for this page
-            view: AnyView(TenthView()),
+            view: AnyView(SandBox2()),
             choices: [
                 Choice(text: "Go to Personal Website", nextPageIndex: 11)
             ],

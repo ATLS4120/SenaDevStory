@@ -2,7 +2,7 @@
 import Foundation
 import SwiftUI
 
-struct EighthView: View {
+struct GradPaper: View {
     var body: some View {
         VStack {
             Text("Graduate Paper - Ethical Hacking")
@@ -14,16 +14,7 @@ struct EighthView: View {
             Text(AllText.GradPaper)
                 .font(.title2)
                 .padding()
-            
-            // Add more UI elements here as needed
-            NavigationLink(destination: NinthView()) {
-                Text("Go to Ninth Page")
-                    .font(.title2)
-                    .padding()
-                    .background(Color.blue)
-                    .foregroundColor(.white)
-                    .cornerRadius(10)
-            }
+        
         }
         .navigationTitle("Second Page") // Optional: Set the title for the navigation bar
     }
@@ -31,7 +22,7 @@ struct EighthView: View {
 
 struct EighthView_Previews: PreviewProvider {
     static var previews: some View {
-        EighthView()
+        GradPaper()
     }
 }
 //template generated with chatGPT
