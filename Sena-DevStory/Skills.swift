@@ -9,17 +9,30 @@ import Foundation
 import SwiftUI
 
 struct Skills: View {
+    
+    @State private var showText = false // Boolean state to control text visibility
 
     var body: some View {
-        VStack {
-            Text("Skills")
-                .font(.largeTitle)
-                .padding()
-// found on https://forums.developer.apple.com/forums/thread/728135
-            Text("Moving piece")
-            Text(AllText.Skills)
-            .padding(.leading, 20)
-        
+        ZStack{
+            if !showText {
+                
+            }
+            VStack {
+                Toggle("Show Details", isOn: $showText) // Toggle view bound to 'showDetails'
+                    .padding()
+//                    .foregroundColor(isOn ? .green : .red)
+                
+                if showText { // Only display text if 'showDetails' is true
+                    Text("Skills")
+                        .font(.largeTitle)
+                        .padding()
+                    // found on https://forums.developer.apple.com/forums/thread/728135
+                    Text(AllText.Skills)
+                        .padding(.leading, 20)
+                    Text("Here are some additional details")
+                }
+                
+            }
         }
         .navigationTitle("Skills") // Optional: Set the title for the navigation bar
     }

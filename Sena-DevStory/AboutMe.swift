@@ -15,7 +15,7 @@ struct AboutMe: View {
     var body: some View {
         VStack {
 
-            Text("About Me!")
+            Text("About Sena!")
                 .font(.largeTitle)
                 .padding()
             Text(AllText.Name)

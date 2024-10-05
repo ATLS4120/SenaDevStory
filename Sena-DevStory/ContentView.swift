@@ -31,7 +31,13 @@ struct ContentView: View {
     @State private var currentPageIndex: Int = 0  // Track the current page index
 
     var body: some View {
-        StoryView(page: story[currentPageIndex], currentPageIndex: $currentPageIndex)  // Pass the state to the StoryView
+        ZStack{
+            Color.mint
+                .ignoresSafeArea()
+            StoryView(page: story[currentPageIndex], currentPageIndex: $currentPageIndex)  // Pass the state to the StoryView
+                .frame(width: 350, height: 700)
+                .border(.orange, width: 4)
+        }
     }
 }
 

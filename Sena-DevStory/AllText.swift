@@ -32,6 +32,7 @@ enum AllText {
     static let SenasWebsite = "This was a personal website I built from scratch, I used bootstrapping to make some of the functionalities."
     static let GradPaper = "This was a paper I wrote on RFID and card access security on University Campuses. I used Latex to format everything"
     static let BroIpsum = "Bro ipsum dolor sit amet gaper backside single track, manny Bike epic clipless. Schraeder drop gondy, rail fatty slash gear jammer steeps clipless rip bowl couloir bomb hole berm. Huck cruiser crank endo, sucker hole piste ripping ACL huck greasy flow face plant pinner. Japan air Skate park big ring trucks shuttle stoked rock-ectomy."
+    static let Wolf = "The wolf turns out to be a biiiig chiller and turns out it is just a person with big hair, would you like to get to know them more?"
     
 
 }
